@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tu Página de Criptomonedas</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #1e1e1e;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      background-color: #222;
+      color: #fff;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      transition: all 0.3s ease;
+    }
+    nav a:hover {
+      background-color: #444;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+    .section {
+      background-color: #fff;
+      color: #333;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+    }
+    .section h2 {
+      margin-top: 0;
+    }
+    .section-content {
+      display: none;
+      margin-top: 1rem;
+    }
+    .section.active .section-content {
+      display: block;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #1e1e1e;
+      color: #fff;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 1rem 0;
+      border-radius: 8px;
+    }
+    .advertisement {
+      background-color: #ff9800;
+      color: #fff;
+      padding: 1rem;
+      border-radius: 4px;
+      text-align: center;
+      margin-top: 2rem;
+    }
+  </style>
+  <script>
+    function toggleSection(id) {
+      var section = document.getElementById(id);
+      section.classList.toggle('active');
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1 style="font-size: 2rem;">Tu Página de Criptomonedas</h1>
+  </header>
+  <nav>
+    <a href="#que-es">¿Qué es una criptomoneda?</a>
+    <a href="#valor">Valor de las criptomonedas</a>
+    <a href="#donde-comprar">¿Dónde comprar criptomonedas?</a>
+    <a href="#famosas">Criptomonedas más famosas</a>
+    <!-- Puedes agregar más enlaces para otras secciones -->
+  </nav>
+  
+  <div class="container">
+    <div class="section" id="que-es" onclick="toggleSection('que-es')">
+      <h2>¿Qué es una criptomoneda?</h2>
+      <div class="section-content">
+        <p>Una criptomoneda es un tipo de moneda digital que utiliza criptografía para garantizar la seguridad de las transacciones y controlar la creación de nuevas unidades. Operan de forma descentralizada, independientemente de un banco central o gobierno. Bitcoin, lanzada en 2009, fue la primera criptomoneda y desde entonces han surgido miles de ellas. Cada criptomoneda cuenta con una cadena de bloques (blockchain) que registra todas las transacciones realizadas y asegura su integridad.</p>
+        <p>Las criptomonedas ofrecen ventajas como mayor privacidad, bajos costos de transacción y acceso a servicios financieros para personas sin cuentas bancarias tradicionales. Sin embargo, también presentan riesgos como la volatilidad del mercado y la posibilidad de ser utilizadas para actividades ilícitas.</p>
+        <img src="ruta/imagen_criptomoneda_1.jpg" alt="Criptomoneda 1">
+      </div>
+    </div>
+
+    <div class="section" id="valor" onclick="toggleSection('valor')">
+      <h2>Valor de las criptomonedas</h2>
+      <div class="section-content">
+        <p>El valor de las criptomonedas fluctúa constantemente en el mercado debido a diversos factores. La oferta y la demanda son factores clave que influyen en los precios. Cuando la demanda de una criptomoneda supera su oferta, su precio tiende a aumentar. Por otro lado, si la oferta supera la demanda, el precio tiende a disminuir.</p>
+        <p>Además de la oferta y la demanda, otros factores que afectan el valor de las criptomonedas incluyen:</p>
+        <ul>
+          <li>Noticias y eventos relacionados con el mundo de las criptomonedas.</li>
+          <li>Desarrollo de tecnologías subyacentes y mejoras en la seguridad.</li>
+          <li>Regulaciones gubernamentales y políticas relacionadas.</li>
+          <li>Adopción por parte de empresas y usuarios.</li>
+        </ul>
+        <p>Es importante tener en cuenta que el mercado de las criptomonedas es altamente volátil, y los precios pueden experimentar cambios significativos en cortos períodos de tiempo.</p>
+        <img src="ruta/imagen_criptomoneda_2.jpg" alt="Criptomoneda 2">
+      </div>
+    </div>
+
+    <div class="section" id="donde-comprar" onclick="toggleSection('donde-comprar')">
+      <h2>¿Dónde comprar criptomonedas?</h2>
+      <div class="section-content">
+        <p>Para comprar criptomonedas, es necesario utilizar un exchange (plataforma de intercambio). Existen numerosos exchanges en línea que permiten a los usuarios comprar, vender y gestionar sus criptomonedas.</p>
+        <p>Algunos de los exchanges más populares y confiables son:</p>
+        <ul>
+          <li><a href="https://www.coinbase.com/" target="_blank">Coinbase</a>: Un exchange fácil de usar, ideal para principiantes.</li>
+          <li><a href="https://www.binance.com/" target="_blank">Binance</a>: Uno de los exchanges más grandes y con una amplia variedad de criptomonedas disponibles.</li>
+          <li><a href="https://www.kraken.com/" target="_blank">Kraken</a>: Un exchange con un enfoque en la seguridad y el cumplimiento normativo.</li>
+          <li><a href="https://www.bitfinex.com/" target="_blank">Bitfinex</a>: Un exchange con herramientas avanzadas para traders experimentados.</li>
+        </ul>
+        <p>Antes de realizar cualquier transacción, es importante investigar y seleccionar una plataforma segura y confiable. Además, es fundamental proteger tus activos digitales utilizando métodos de seguridad, como la autenticación de dos factores (2FA).</p>
+        <img src="ruta/imagen_criptomoneda_3.jpg" alt="Criptomoneda 3">
+      </div>
+    </div>
+
+    <div class="section" id="famosas" onclick="toggleSection('famosas')">
+      <h2>Criptomonedas más famosas</h2>
+      <div class="section-content">
+        <p>Existen miles de criptomonedas en el mercado, pero algunas de las más famosas y ampliamente reconocidas son:</p>
+        <ul>
+          <li><strong>Bitcoin (BTC)</strong>: La primera y más conocida criptomoneda, creada por una persona o grupo bajo el seudónimo de Satoshi Nakamoto. Bitcoin es considerado como el oro digital y es ampliamente utilizado como reserva de valor.</li>
+          <li><strong>Ethereum (ETH)</strong>: Una plataforma blockchain que permite la creación de contratos inteligentes y aplicaciones descentralizadas (dApps). Ethereum es un pilar fundamental para muchos proyectos de criptomonedas y tokens.</li>
+          <li><strong>Ripple (XRP)</strong>: Una criptomoneda y red de pagos utilizada para transacciones financieras internacionales rápidas y económicas.</li>
+          <li><strong>Litecoin (LTC)</strong>: Creada como una versión mejorada de Bitcoin, Litecoin ofrece tiempos de confirmación de transacción más rápidos y una mayor eficiencia en el proceso minero.</li>
+          <li><strong>Cardano (ADA)</strong>: Una plataforma blockchain de código abierto que busca brindar una mayor seguridad y sostenibilidad en la gestión de contratos inteligentes y aplicaciones descentralizadas.</li>
+        </ul>
+        <p>Estas son solo algunas de las muchas criptomonedas disponibles en el mercado, y cada una tiene características y casos de uso únicos. La investigación y el análisis cuidadoso son fundamentales al considerar la inversión en criptomonedas.</p>
+        <img src="ruta/imagen_criptomoneda_4.jpg" alt="Criptomoneda 4">
+      </div>
+    </div>
+
+    <!-- Agrega más secciones con información ficticia sobre otras criptomonedas -->
+
+    <div class="advertisement">
+      <p>Anuncio: ¡Únete a nuestro boletín informativo para recibir las últimas noticias sobre criptomonedas!</p>
+    </div>
+  </div>
+
+  <footer>
+    Derechos de autor © 2023 Tu Empresa. Todos los derechos reservados.
+  </footer>
+</body>
+</html>
